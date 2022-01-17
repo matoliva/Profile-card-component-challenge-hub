@@ -1,0 +1,125 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-size: 60%, 60%;
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -10rem, 50rem;
+    background-position-y: -20rem, 20rem;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 100%, 100%;
+        background-position-x: -13rem, 12rem;
+        background-position-y: -3rem, 33rem;
+    }
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 360px;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.header {
+    width: 100%;
+    height: 8rem;
+    border-radius: 0.5rem;
+}
+
+.header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgb(223, 221, 221);
+    
+}
+
+.profile-image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    transform: translate(0, -50px);
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(0, -30px);
+}
+
+.profile-info .name {
+    font-size: 18px;
+}
+
+.profile-info h2 {
+    padding: 0.1rem;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+}
+
+.statistics-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 700;
+}
+
+.statistics .social-media {
+    font-size: 0.6rem;
+    color: grey;
+    letter-spacing: 2px;
+    padding: 0.5rem;
+}
+
+.attribution {
+    margin-top: 2rem;
+}
